@@ -14,7 +14,7 @@ import { useNavigate } from 'react-router-dom';
 export const AboutPage: React.FC = () => {
   const navigate = useNavigate();
 
-  const handleMainPage = () => {
+  const handleHomePage = () => {
     // routing to the medicine search page
     navigate('/');
   };
@@ -24,7 +24,7 @@ export const AboutPage: React.FC = () => {
       <Header />
       <section className={styles.main}>
         <AboutFrame />
-        <Button onClick={handleMainPage} type="submit" size="default">
+        <Button onClick={handleHomePage} type="submit" size="default">
           Найти лучшую цену
         </Button>
       </section>
