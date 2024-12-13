@@ -3,6 +3,7 @@ import styles from './styles.module.scss';
 import { Header } from '@/widgets/header';
 import { SearchPanel } from '@/widgets/search-panel';
 import { Footer } from '@/widgets/footer';
+import { Basket } from '@/widgets/basket';
 
 /**
  * Renders the HomePage component which includes the Header, SearchPanel, and Footer components.
@@ -15,6 +16,9 @@ export const HomePage = () => {
       <Header />
       <main className={styles.main}>
         <SearchPanel />
+        <div className={styles['result-page']}>
+          <Basket size="small" products={[]} />
+        </div>
       </main>
       <Footer />
     </>
